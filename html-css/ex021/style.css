@@ -5,9 +5,28 @@
     /*height: 100%;*/
 }
 
-body{
-    background-image: linear-gradient(to botom,);
+body {
+    background-image: linear-gradient(to right, #50DE94, #58D6D0);
+}
+
+main {
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #063b54;
+}
+h1{
+    color: #C886F0;
+    text-align: center;
+    text-shadow: 1px 1px 0px #033f5b;
+}
+h2 {
+    color: #839BF0;
+    text-shadow: 1px 1px 0px #033f5b
 }
 p {
+    color: #033f5b;
     text-align: justify;
 }
