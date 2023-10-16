@@ -1,9 +1,47 @@
+/* 
+    em HTML é ID = em CSS é #  -> ID é único
+    em HTML é class = em CSS é .   -> Classe é múltiplo
+*/
+
 @charset "UTF-8";
 @font-face {
     font-family: "Tiresias";
-    src: url(fontes/Tiresias_Infofont.ttf) format("truetype") url(fontes/Tiresias_Infofont_Italic.ttf) format("truetype");
+    src: url(fontes/Tiresias_Infofont.ttf) format("truetype"), url(fontes/Tiresias_Infofont_Italic.ttf) format("truetype");
 }
 body {
     background-image: linear-gradient(to right, #7ADE7E, #09C67A);
-    font-family: "Tiresias", Arial, Helvetica, sans-serif;
+    font-family: 'Tiresias', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+    font-size: normal;
+    color: #05397D;
+}
+
+h1#principal {
+    /* EM HTML É ID = EM CSS É #  */
+    text-align: center;
+    background-color: #14A7A1;
+    border-radius: 10px;
+}
+
+
+h2 {
+    color: #0775B0;
+}
+.basico {
+    /* em HTML é class = em CSS é .   -> Classe é múltiplo */
+    color: #0775B0;
+}
+
+.intermediario {
+    color: #076091;
+}
+.avancado {
+    color: #043b59;
+}
+
+p {
+    color: #032552;
 }
