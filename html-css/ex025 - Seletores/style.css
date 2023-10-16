@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "Tiresias";
+    src: url(fontes/Tiresias_Infofont.ttf) format("truetype") url(fontes/Tiresias_Infofont_Italic.ttf) format("truetype");
+}
+body {
+    background-image: linear-gradient(to right, #7ADE7E, #09C67A);
+    font-family: "Tiresias", Arial, Helvetica, sans-serif;
+}
