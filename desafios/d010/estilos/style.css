@@ -36,6 +36,8 @@ para cores, por exemmplo:
     --fonte-iDroid: 'iDroid', 'cursive';
 }
 
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -44,6 +46,10 @@ para cores, por exemmplo:
 body {
     background-color: var(--cor01);
     font-family: var(--fonte-padrao);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
 }
 
 header {
@@ -71,6 +77,7 @@ header > p {
     color: white;
     max-width: 500px;
     margin: auto;
+    margin-bottom: 20px;
     padding-right: 10px;
     padding-left: 10px;
     
@@ -95,7 +102,6 @@ nav > a {
 nav > a:hover {
     background-color: var(--cor02);
     color: black;
-    
 }
 
 main {
@@ -111,23 +117,48 @@ main {
     
 }
 
+main strong {
+    color: var(--cor04);
+    font-weight: bold;
+   
+}
+
+main a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--cor05);
+    background-color: var(--cor00);
+    padding: 2px 5px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+main a:hover {
+    background-color: var(--cor02);
+    color: black;
+}
+
 main h1 {
     color: var(--cor03);
+    font-size: 1.5em;
     font-family: var(--fonte-iDroid);
-    text-shadow: 1px 1px 0px var(--cor05);
+    text-shadow: 1.5px 1.5px 0px var(--cor05);
 }
 
 main h2 {
-    background-image: linear-gradient(to right, var(--cor01), white);
+    background-image: linear-gradient(to right, var(--cor01), transparent);
     color: var(--cor03);
     font-family: var(--fonte-iDroid);
-    text-shadow: 1px 1px 0px var(--cor05);
+    text-shadow: 1.2px 1.2px 0px var(--cor05);
+    text-indent: 8px;
 }
 
 
-main article {
+main p {
+    margin: 15px 0px;
+    text-indent: 30px;
     text-align: justify;
-    
+    line-height: 2em;
 }
 
 main img {
@@ -135,30 +166,58 @@ main img {
 }
 
 main img.pequena {
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
 
-iframe {
-    width: 100%;
+div.video {
+    background-color: var(--cor05);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
 }
 
-aside h3 {
-    color: white;
-    background-color: var(--cor03);
-    padding: 10px;
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
+
+aside {
+    background-color: var(--cor01);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px var(--cor05);
+}
+
+aside > h3 {
+    background-color: var(--cor04);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
 
 aside > ul {
-    margin-left: 20px;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
 }
 
 footer {
     background-color: var(--cor05);
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 5px
+}
+
+main p {
+    padding: 10px;
 }
 
 footer a {
@@ -167,5 +226,14 @@ footer a {
     
 }
 
+footer a:hover {
+    text-decoration: underline;
+    transition-duration: 0.2s;
+    color: var(--cor05);
+    background-color: var(--cor01);
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 3px;
+}
 
 /*background-image: linear-gradient(to bottom, #84E1AD, #1A5C38);*/
