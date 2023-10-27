@@ -11,6 +11,11 @@
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Cordel', sans-serif;
     --fonte3: 'Sriracha', cursive;
+
+    --cor01: rgb(253, 217, 58);
+    --cor02: rgb(237, 213, 105);
+    --cor-footer: rgb(220, 184, 25);
+    --cor-back-img: rgba(237, 213, 105, 0.741);
 }
 
 * {
@@ -26,7 +31,7 @@ html, body {
 }
 
 header {
-    background-image: linear-gradient(to bottom, rgb(253, 217, 58), rgb(237, 213, 105));
+    background-image: linear-gradient(to bottom, var(--cor01),var(--cor02));
     background-color: rgb(220, 184, 25);
     color: white;
     text-align: center;
@@ -77,13 +82,13 @@ section > p {
 }
 
 section.normal {
-    background-color: rgb(237, 213, 105);
+    background-color: var(--cor02);
     color: black;
 }
 
 section.imagem {
     background-color: rgba(0, 0, 0, 0.214);
-    color: rgb(255, 255, 255);
+    color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.475);
     background-attachment: fixed;
 }
@@ -103,7 +108,7 @@ section#img02 {
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(237, 213, 105, 0.741);
+    background-color: var(--cor-back-img);
     border-radius: 10px;
     color: black;
     font-weight: bolder;
@@ -111,9 +116,10 @@ section.imagem > p {
 }
 
 footer {
-    background-color: rgb(220, 184, 25);
+    background-color: var(--cor-footer);
     color: black;
     font-weight: bolder;
+    font-size: 0.8em;
     text-align: center;
     padding: 10px;
 }
@@ -127,10 +133,11 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+    text-shadow: none;
     background-color: white;
     color: black;
     padding: 5px;
     border-radius: 10px;
     transition-duration: 0.1s;
-    text-shadow: none;
+    
 }
