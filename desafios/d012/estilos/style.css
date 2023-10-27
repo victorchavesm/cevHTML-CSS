@@ -26,6 +26,7 @@ html, body {
 }
 
 header {
+    background-image: linear-gradient(to bottom, rgb(253, 217, 58), rgb(237, 213, 105));
     background-color: rgb(220, 184, 25);
     color: white;
     text-align: center;
@@ -40,17 +41,20 @@ header > h1 {
 }
 
 header > p {
+    text-shadow: 1px 1px 0px black;
     padding-bottom: 50px;
 }
 
-header a, footer a {
+header a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
+    
 }
 
-header a:hover, footer a:hover {
+header a:hover {
     text-decoration: underline;
+    text-shadow: none;
     background-color: white;
     color: black;
     padding: 5px;
@@ -112,4 +116,21 @@ footer {
     font-weight: bolder;
     text-align: center;
     padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    text-shadow: 1px 1px 0px black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    transition-duration: 0.1s;
+    text-shadow: none;
 }
