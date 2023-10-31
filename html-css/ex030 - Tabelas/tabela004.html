@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclando Células</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1> Mesclando Células</h1>
+    <table>
+        <tr>
+            <td rowspan="2">A</td>
+            
+            <td colspan="2">C</td>
+        </tr>
+        <tr>
+            
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            
+        </tr>
+        <tr>
+            
+            <td>K</td>
+            <td colspan="2">L</td>
+        </tr>
+    </table>
+</body>
+</html>
