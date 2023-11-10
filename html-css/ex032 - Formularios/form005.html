@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio Button</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M" required> <label for="imasc"> Masculino</label> <br>
+            <input type="radio" name="sexo" id="ifem" value="F" required> <label for="ifem"> Feminino</label> <br>
+            <!-- TODO BOTAO DE RADIO QUE FAZ PARTE DO MESMO GRUPO TEM QUE TER O MESMO NOME PARA QUE FUNCIONE -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Esporte favorito</legend>
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut"> Futebol</label>
+            <input type="checkbox" name="basq" id="ibasq"> <label for="ibasq"> Basquete</label>
+            <input type="checkbox" name="vol" id="ivol"> <label for="ivol"> Vôlei</label>
+            <input type="checkbox" name="tenis" id="iten"> <label for="iten"> Tênis</label>
+            <input type="checkbox" name="nat" id="inat"> <label for="inat"> Natação</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>    
+</body>
+</html>
