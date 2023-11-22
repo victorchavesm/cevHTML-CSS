@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <nav>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <nav id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -22,10 +24,19 @@
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo obcaecati eveniet, dolore rerum molestiae dicta at officia similique tempore impedit qui delectus quia ipsam adipisci amet quibusdam rem perferendis libero!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo obcaecati eveniet, dolore rerum molestiae dicta at officia similique tempore impedit qui delectus quia ipsam adipisci amet quibusdam rem perferendis libero! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi eveniet sapiente temporibus quisquam minima accusantium neque dolore dignissimos dolor beatae voluptas, enim voluptate eius nisi nulla accusamus ipsam harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit modi accusantium ipsum eius, magnam dolores ipsa expedita necessitatibus quasi fugit? Eveniet porro ut totam aliquid vero temporibus dolore iusto maxime.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, debitis odit recusandae atque quas quisquam quo magni placeat corrupti aperiam accusamus quasi ipsam repellendus illum eius ratione beatae! Harum, beatae?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tenetur debitis magni qui voluptate a adipisci! Eius vitae odio soluta! Corporis iure autem perferendis fugit ipsam modi sed eligendi alias? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam est repellendus libero nemo! Ad, et non, reiciendis est aperiam excepturi amet doloribus similique dolorum suscipit illum necessitatibus voluptate minus quod. </p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
