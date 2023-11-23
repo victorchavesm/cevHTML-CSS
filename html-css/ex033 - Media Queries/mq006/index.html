@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1>Login</h1>
+    <p>
+        Seja bem-vindo(a). Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
+    </p>
+
+    <form action="cadastro.php" method="GET" autocomplete="on">
+        <p><label for="iuser"><i id="burguer" class="material-icons">person</i> Nome: </label>
+            <input type="email" name="user" id="iuser" minlength="2" placeholder="seu e-mail">
+        </p>
+
+        <p><label for="ipassword"><i id="burguer" class="material-icons">key</i> Senha: </label>
+        <input type="text" name="password" id="ipassword" minlength="8" maxlength="20" placeholder="sua senha">
+        </p>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+        <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
+    
+</body>
+</html>
